@@ -30,11 +30,6 @@
 
 /* Index page  */
 
-html {
-    height: 100%;
-    overflow-y: hidden;
-}
-
 html,
 body {
     background: white;
@@ -44,13 +39,10 @@ body {
     max-width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
+    position: relative;
     /* scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
     scroll-snap-points-y: repeat(100vh); */
-}
-
-body {
-    overflow-y: auto;
 }
 
 p {
@@ -73,7 +65,7 @@ p {
     padding-top: 104px;
     background-image: url("../images/bg6.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 60%;
     background-repeat: no-repeat;
     transition: filter 0.5s ease-in-out;
 }
@@ -200,6 +192,8 @@ p {
     bottom: 0px;
     background-color: #130303;
     z-index: 100;
+    text-align: center;
+    color: #ffffff;
 }
 
 #footer a {
@@ -248,6 +242,16 @@ p {
 }
 
 /* UTILITY */
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
 
 .center {
     display: block;
@@ -352,8 +356,8 @@ p {
 
     #content {
         border-radius: 0px;
-        height: 100%;
-        margin: 0;
+        /* height: 100%; */
+        /* margin: 0; */
     }
 
     #content h1 {
@@ -374,9 +378,6 @@ p {
 
     #content {
         border-radius: 0px;
-        height: 100%;
-        margin: 0;
-        padding: 0;
     }
 
     #content h1 {
