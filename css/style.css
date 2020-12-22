@@ -54,6 +54,8 @@ html, body {
   margin: 0;
   max-width: 100%;
   overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 #main-wrapper {
@@ -66,9 +68,9 @@ html, body {
 .page {
   box-sizing: border-box;
   width: 100vw;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
   height: 100vh;
-  /* padding-top: 100px; */
+  padding-top: 104px;
 }
 
 #page1 {
@@ -131,17 +133,50 @@ html, body {
 }
 
 #sign-in {
+  position: absolute;
+  right: 0;
+  top: calc(50vh + 52px);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   /* height: 500px; */
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 #sign-in h1 {
   /* text-align: right; */
   text-transform: uppercase;
   font-family: "poppins medium";
+}
+
+.scrolldown::before {
+	animation: bounce 1.25s cubic-bezier(.56,.08,.48,.9) infinite;
+	/* animation: bounce 1.75s ease-in-out infinite; */
+  /* bottom: 1.3rem; */
+  top: 90vh;
+	color: #fff;
+	content: '╲╱';
+	font-size: 1.4rem;
+	height: 3rem;
+	left: 50%;
+	letter-spacing: -1px;
+	line-height: 4rem;
+	margin-left: -3rem;
+	opacity: 0.8;
+	position: absolute;
+	text-align: center;
+  width: 6rem;
+  z-index: 100;
+}
+
+@keyframes bounce {
+	50% {
+	  	transform: translateY(-25%);
+	}
 }
 
 /*--FONTS--*/
@@ -183,24 +218,13 @@ html, body {
   
   #left-section {
     text-align: center;
-    /* height: 100vh; */
   }
     
   #sign-in {
-    text-align: center;
-    /* height: 100vh; */
+    visibility: hidden;
   }
 
   #left-section p {
     font-size: 4vw;
-  }
-
-  #page1 {
-    /* height: 200vh; */
-  }
-
-  #sign-in {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 }
