@@ -1,5 +1,4 @@
 .navbar {
-    /* background-color: rgba(0, 0, 0, .7); */
     background-color: rgba(255, 255, 255, 0.8);
     transition-duration: .5s;
     border-radius: 6px;
@@ -7,12 +6,7 @@
 }
 
 .navbar-brand {
-    /* background-color: white; */
     max-width: 78%;
-}
-
-.navbar-brand span {
-    font-size: 40px;
 }
 
 .navbar-brand img {
@@ -25,7 +19,6 @@
 
 .nav-item {
     font-family: 'encode sans reg';
-    /* font-size: 1.2rem; */
     font-size: 19px
 }
 
@@ -34,27 +27,12 @@
     transition: border-bottom-color linear .5s
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.vertical-center {
-    /* margin: 0; */
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
 
 /* Index page  */
 
 html {
-	height: 100%;
-	overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 html,
@@ -67,12 +45,12 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     /* scroll-snap-type: y mandatory;
-  scroll-snap-stop: always; */
-    /* scroll-snap-points-y: repeat(100vh); */
+    scroll-snap-stop: always;
+    scroll-snap-points-y: repeat(100vh); */
 }
 
 body {
-	overflow-y: auto;
+    overflow-y: auto;
 }
 
 p {
@@ -80,15 +58,11 @@ p {
 }
 
 #main-wrapper {
-    /* padding-top: 140px; */
-    /* opacity: 1; */
-    /* transition: ease 2s opacity; */
     position: relative;
 }
 
 .page {
-    /* scroll-snap-align: center; */
-    /* scroll-snap-stop: start; */
+    /* scroll-snap-align: start; */
     width: 100vw;
     min-height: 100vh;
 }
@@ -99,34 +73,27 @@ p {
     justify-content: center;
     align-items: center;
     background-image: url("../images/bg6.jpg");
-	/* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	background-color: white;
-	transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
 }
 
-.blur {
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
-} 
-
 #page2 {
-	position: relative;
+    position: relative;
     padding-top: 120px;
     background-image: url("../images/bg5.jpg");
     background-size: cover;
-	background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: white;
 }
 
 #page3 {
-	position: relative;
+    position: relative;
     padding-top: 140px;
     background-image: url("../images/bg10.png");
-	/* background-attachment: fixed; */
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,14 +141,9 @@ p {
     width: 100%;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.1);
-    /* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)); */
 }
 
 #left-section {
-    /* height: 100%; */
-    /* display: table; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     color: white;
     align-items: center;
     text-align: left;
@@ -208,20 +170,94 @@ p {
     top: calc(50vh + 52px);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
-    /* height: 500px; */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
-	z-index: 1;
-	font-family: 'encode sans reg';
+    z-index: 1;
+    font-family: 'encode sans reg';
 }
 
 #sign-in h1 {
-    /* text-align: right; */
     text-transform: uppercase;
     font-family: "poppins medium";
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #130303;
+    z-index: 100;
+}
+
+#footer a {
+    color: #ffffff;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+#footer ul.social li:hover a i {
+    color: #ffd5d5;
+}
+
+/* LOGIN OVERLAY */
+
+#loginOverlay {
+    height: 100%;
+    margin: 0;
+}
+
+#loginOverlay .modal-dialog {
+    position: relative;
+    height: 90%;
+}
+
+#loginOverlay .modal-content {
+    max-width: 400px;
+    margin: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#x {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 35px;
+    top: -10px;
+    right: -2px;
+    z-index: 1000;
+}
+
+/* UTILITY */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.blur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .scrolldown::before {
@@ -248,64 +284,6 @@ p {
     50% {
         transform: translateY(-25%);
     }
-}
-
-/* FOOTER */
-
-#footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    background-color: #130303;
-    z-index: 100;
-}
-
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    /* background-color: transparent; */
-    /* -webkit-text-decoration-skip: objects; */
-}
-
-#footer ul.social li a i {
-    margin-right: 5px;
-    font-size: 25px;
-}
-
-#footer ul.social li:hover a i {
-    color: #ffd5d5;
-}
-
-/* LOGIN OVERLAY */
-
-#loginOverlay {
-	height: 100%;
-	margin: 0;
-}
-
-#loginOverlay .modal-dialog {
-	position: relative;
-	height: 90%;
-}
-
-#loginOverlay .modal-content {
-	max-width: 400px;
-	margin: auto;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-	background-color: rgba(255, 255, 255, 0.95);
-}
-
-#x {
-    position: absolute;
-	background: rgba(0, 0, 0, 0);
-	border-radius: 50%;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 35px;
-	top: -10px;
-	right: -2px;
-	z-index: 1000;
 }
 
 /*--FONTS--*/
@@ -365,9 +343,3 @@ p {
         margin-top: 25px;
     }
 }
-
-/* @media only screen and (min-width: 800px) {
-	#contact {
-		margin-top: 50px;
-	}
-} */
