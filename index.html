@@ -74,24 +74,26 @@
 
         <!-- PAGE-2 BEGIN -->
         <div id="page2" class="page m-0">
-            <div id="content" class="container shadow-lg px-4 py-5">
-                <h1>Welcome to <span class="brand1">research</span><span class="brand2">mentors</span><span
-                        class="brand3">.com</span>!</h1>
-                <p>GradXs is an educational service organisation facilitating ability based competency certificate to
-                    university degree qualification in association / authorization from recognised institutions. GradXs
-                    is an unit of CENTRE FOR MANAGEMENT CONSULTANCY & EDUCATION (P) LTD. , a Company incorporated under
-                    Indian Companies Act vide Registration No. 010267. GradXs is legally authorized under Indian Laws to
-                    offer educational programs & issue its own autonomous Diplomas. The GradXs is also legally enabled
-                    to offer consultancy services to Indian / foreign institutions & Universities and others who are
-                    interested in its services.</p>
-                <p>GradXs is an ISO-9001:2015 Certified organization and its quality management system is world-class
-                    and suitable to serve students from all over the place thrugh its online portal www.gradxs.com.
-                    GradXs runs its activities online and through its authorized associate organizations at major
-                    locations of India.</p>
-                <p>GradXs services include Competency Certificates, Ability Assessment Modular Certificates, Diploma &
-                    PG Diploma Programs offered from gradxs. Apart from our own courses, we facilitate University run
-                    Programs from accredited foreign universities. GradXs also offers Information & Guidance Services
-                    for Study Abroad and other academic consultancy services.</p>
+            <div style="height: 100%; width: 100%; display: table-cell; vertical-align: middle;">
+                <div id="content" class="container shadow-lg px-4 py-5">
+                    <h1>Welcome to <span class="brand1">research</span><span class="brand2">mentors</span><span
+                            class="brand3">.com</span>!</h1>
+                    <p>GradXs is an educational service organisation facilitating ability based competency certificate to 
+                        university degree qualification in association / authorization from recognised institutions. GradXs 
+                        is an unit of CENTRE FOR MANAGEMENT CONSULTANCY & EDUCATION (P) LTD. , a Company incorporated under 
+                        Indian Companies Act vide Registration No. 010267. GradXs is legally authorized under Indian Laws to 
+                        offer educational programs & issue its own autonomous Diplomas. The GradXs is also legally enabled 
+                        to offer consultancy services to Indian / foreign institutions & Universities and others who are 
+                        interested in its services.</p>
+                    <p>GradXs is an ISO-9001:2015 Certified organization and its quality management system is world-class
+                        and suitable to serve students from all over the place thrugh its online portal www.gradxs.com.
+                        GradXs runs its activities online and through its authorized associate organizations at major
+                        locations of India.</p>
+                    <p>GradXs services include Competency Certificates, Ability Assessment Modular Certificates, Diploma &
+                        PG Diploma Programs offered from gradxs. Apart from our own courses, we facilitate University run
+                        Programs from accredited foreign universities. GradXs also offers Information & Guidance Services
+                        for Study Abroad and other academic consultancy services.</p>
+                </div>
             </div>
         </div>
         <!-- PAGE-2 END -->
@@ -135,41 +137,41 @@
                 </div>
             </div>
         </section>
-    </div>
+        </div>
 
-    <!-- Login Overlay -->
-    <div class="modal fade" id="loginOverlay" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <button id="x" class="btn" data-dismiss="modal">&times;</button>
-                <div class="modal-body shadow-lg p-4">
-                    <h1>Login</h1>
-                    <form>
-                        <div class="mb-3">
-                            <label for="signin-email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="signin-email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="signin-pwd" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="signin-pwd">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="rememberme">
-                            <label class="form-check-label" for="rememberme">Remember Me</label>
-                        </div>
+        <!-- Login Overlay -->
+        <div class="modal fade" id="loginOverlay" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <button id="x" class="btn" data-dismiss="modal">&times;</button>
+                    <div class="modal-body shadow-lg p-4">
+                        <h1>Login</h1>
+                        <form>
+                            <div class="mb-3">
+                                <label for="signin-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signin-email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signin-pwd" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signin-pwd">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberme">
+                                <label class="form-check-label" for="rememberme">Remember Me</label>
+                            </div>
+                            <div style="text-align: center;">
+                                <button type="submit" class="btn btn-primary w-25">Sign In</button>
+                            </div>
+                        </form>
+                        <hr class="mt-3 mb-2">
                         <div style="text-align: center;">
-                            <button type="submit" class="btn btn-primary w-25">Sign In</button>
+                            <p class="my-0">OR</p>
+                            <button class="btn btn-success mt-2 w-25">Join Us</button>
                         </div>
-                    </form>
-                    <hr class="mt-3 mb-2">
-                    <div style="text-align: center;">
-                        <p class="my-0">OR</p>
-                        <button class="btn btn-success mt-2 w-25">Join Us</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <script>
         $("#loginOverlay").on("show.bs.modal", (e) => {

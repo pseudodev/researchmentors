@@ -71,8 +71,8 @@ p {
 }
 
 #page2 {
+    display: table;
     position: relative;
-    padding-top: 120px;
     background-image: url("../images/bg5.jpg");
     background-size: cover;
     background-position: center;
@@ -102,14 +102,10 @@ p {
 }
 
 #content {
-    position: absolute;
     border-radius: 5px;
     max-width: 1000px;
     background-color: rgba(255, 255, 255, 0.9);
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    vertical-align: middle;
 }
 
 #content h1 {
